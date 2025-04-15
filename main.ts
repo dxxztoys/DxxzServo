@@ -31,7 +31,6 @@ namespace servos {
         // send pulse
         if(speed > 0 || speed == 0) pins.servoSetPulse(servo, Math.map(speed, 0, 100, 1300, 2500))
         else if(speed < 0) pins.servoSetPulse(servo, Math.map(speed, -100, -1, 500, 1200))
-        
     }
     //% weight=10
     //% blockId=servoservosetstop36 block="设置360°舵机 %servo 停止 "
